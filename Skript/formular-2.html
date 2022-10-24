@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="formular_auswertung-2.php" method="POST">
+
+        <form action="form-elemente.php" method="get"> 
+            <p>E-Mail: <input type="email" name="email"></p> 
+             <p>Passwort: <input type="password" name="password"></p> 
+             <p>Datum: <input type="date" name="datum"></p> 
+             <p>Farben: <br> 
+            <input type="checkbox" name="gelb"> gelb 
+             <input type="checkbox" name="blau"> blau 
+             <input type="checkbox" name="gruen"> gruen 
+             <input type="checkbox" name="rot" value="#f00"> rot</p> 
+             <p>Ampel: <br> 
+            <input type="radio" name="ampel" value="gruen"> grün 
+             <input type="radio" name="ampel" value="gelb"> gelb 
+             <input type="radio" name="ampel" value="rot"> rot</p> 
+             <p>Speisen: <br> 
+            <input type="checkbox" name="speisen[]"> Pizza 
+             <input type="checkbox" name="speisen[]"> Nudeln 
+             <input type="checkbox" name="speisen[]" value="salat"> Salat</p> 
+            <p> Eis: <select name="eissorte"> 
+             <option></option> 
+             <option>Schoko</option> 
+             <option>Vanille</option> 
+             <option>Nuss</option> 
+             </select></p> 
+            <p> Gemüse: <select name="gemuese"> 
+             <option></option> 
+             <option value="sorte-1">Bohnen</option> 
+             <option value="sorte-2">Erbsen</option> 
+             <option value="sorte-3">Blumenkohl</option> 
+             </select> </p>
+             <p> Obst: <select name="obst[]" multiple> 
+                <option>Apfel</option> 
+                <option>Birne</option> 
+                <option>Pflaume</option> 
+                <option>Orange</option> 
+                </select></p> 
+               <p>Nachricht:<br><textarea name="memo"></textarea></p> 
+                <p><input type="submit" value="Abschicken" name="senden"></p> 
+               </form>
+
+    </form>
+
+    <form action="formular_auswertung-2.php" method="POST">
+        <p>Interessen:
+            <input type="checkbox" name="interesse[]" value="Kultur"> Kultur
+            <input type="checkbox" name="interesse[]" value="Musik"> Musik
+            <input type="checkbox" name="interesse[]" value="Natur"> Natur
+            <input type="checkbox" name="interesse[]" value="Sport"> Sport
+        </p>
+        <p>Zahlungsart:
+            <input type="radio" name="zahlung" value="bar"> bar
+            <input type="radio" name="zahlung" value="Scheck"> Scheck
+            <input type="radio" name="zahlung" value="Überweisung"> Überweisung
+        </p>
+        <p>Nachricht:<br><textarea name="memo"></textarea></p>
+        <p><input type="submit" name="absenden" value="Abschicken">
+            <input type="reset" value="Zurücksetzen">
+        </p>
+
+
+    </form>
+</body>
+
+</html>
